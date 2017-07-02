@@ -1,0 +1,57 @@
+  <!-- Header -->
+  <section id="header">
+    <div id="logo">
+      <a href="/"><h1>Chuck R Evans</h1></a>
+    </div>
+  </section>
+  
+
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button id="burger" type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal" aria-expanded="true">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="brand" class="navbar-brand" href="/">Chuck R Evans</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="nav-items">
+          <li><a href="/destinations">Destinations</a></li>
+          <li><a href="#contactModal" data-toggle="modal">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.facebook.com/chuckrevans/" target="_blank"><i class="fa fa-facebook-square fa-2x social-nav" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/chuckrevans/" target="_blank"><i class="fa fa-instagram fa-2x social-nav" aria-hidden="true"></i></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- Fullscreen Menu Modal -->
+	<div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="color:#fff;">
+				<div class="modal-header" style="border:0;">
+						<button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true"><i id="close-x" class="fa fa-close fa-lg"></i></button>	
+						<!--<h4 class="modal-title text-center"><span class="sr-only">main navigation</span></h4>-->
+				</div>
+				<div class="modal-body text-center">
+					<ul style="list-style-type:none;">
+						<li><a class="" href="/">Home</a></li>
+						<li><a class="" href="/destinations">Destinations</a></li>
+						<li><a class="" href="#">Contact</a></li>
+					</ul>
+					<a href="https://www.facebook.com/chuckrevans/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/chuckrevans/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				</div>
+			</div><!-- /modal-content -->
+		</div><!-- /modal-dialog -->
+	</div><!-- /fullscreen -->

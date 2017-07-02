@@ -1,0 +1,762 @@
+/* color palette 
+  Blue - #3A6F9E
+  Teal - #15a892
+*/
+
+* {
+  font-family:'Oswald', sans-serif;
+  letter-spacing: 2px;
+  font-weight:400;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+	/*background-color:#fff;*/
+}
+
+/*text styling*/
+
+
+.margin {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -moz-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -moz-margin-end: 0px;
+}
+
+.jumbotron {background:transparent; }
+
+/*vertical align*/
+#wrapper {
+    display: flex;            /* establish flex container */
+    align-items: center;      /* vertically center flex items */
+}
+
+.thumbnail {
+  border-radius:0px !important;
+}
+
+
+/*****************************************************/
+/*                     Header                        */
+/*****************************************************/
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  #header {
+	  text-align:center;
+  }
+  #logo h1 {
+    padding-left:25px;
+  }
+  #brand.appear {
+    display:block;
+  }
+  #brand {
+    /*display:none;*/
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  #header {
+    display:none;
+  }
+  #logo h1 {
+    font-size:2em;
+  }
+  #brand {
+    display:block;
+    margin-left:0px;
+  }
+}
+
+#header {
+	height:75px;
+  background-color:white;
+  margin-top:-25px;
+  opacity:.9;
+}
+#logo h1 {
+	padding-top:25px;
+	font-family: 'rock salt';
+  color:#000;
+}
+#header a:hover {
+	text-decoration: none;
+}
+
+/*****************************************************/
+/*                     Navbar                        */
+/*****************************************************/
+
+
+.navbar-right {
+  margin-right:-35px !important;
+  margin-bottom:-10px;
+}
+
+.social-nav {
+  visibility:hidden;
+  /*display:inline-block;*/
+}
+
+
+
+/* General
+---------------------------------------------- */
+.navbar-default {
+	background-color:white;
+	margin-bottom:0px;
+  z-index:999;
+  opacity:.9;
+}
+.navbar {
+	width:100%;
+	border:none;
+	border-radius:0;
+}
+#nav-items {
+  margin-right:-90px;
+}
+
+/* Brand
+---------------------------------------------- */
+.navbar-default .navbar-brand {
+	font-family: 'rock salt';
+	display:none;
+  color:#4a4a4a;
+}
+
+.navbar-default .navbar-brand:hover {
+  color:#3A6F9E;
+}
+
+/* Navbar Links
+---------------------------------------------- */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-default .navbar-nav li a {
+  color: #333;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:after {
+	color:#3A6F9E;
+}
+
+
+/* MENU BUTTON
+-------------------------------------------------- */
+
+#burger {
+  border:1px solid transparent;
+  margin-right:25px; 
+}
+#burger:hover {
+  border:1px solid #3A6F9E;
+  background-color:transparent; 
+}
+#burger:focus {
+  background-color:transparent; 
+}
+#icon {
+  background-color:#3A6F9E; 
+}
+
+
+/*------------------------------------------------- */
+/* FULL SCREEN MENU MODAL
+-------------------------------------------------- */
+.fullscreen .modal-dialog {
+	margin: 0 0 0 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	color: #333;
+}
+
+.fullscreen .modal-content {
+	height: 100%;
+	min-height: 100%;
+	border-radius: 0;
+	color: #fff;
+	background-color:rgb(21,168,146);
+	background-color:rgba(21,168,146,.8);
+	overflow:auto;
+}
+
+.fullscreen .modal-body ul {
+	padding: 100px 0 0 0;
+}
+
+.fullscreen .modal-body li {
+	padding: 10px 0 10px 0 ;
+}
+
+#menuModal .close {
+  margin-top:17px;
+  margin-right:18px;
+}
+#close-x {
+  background-color:#fff;
+}
+.fullscreen .modal-body a {
+	color: #fff;
+	text-transform: uppercase;
+}
+.fullscreen .modal-body a:hover {
+  color:#4a4a4a;
+  text-decoration:none;
+}
+
+#menuModal .fa {
+  padding:3px;
+}
+
+@media (max-width: 480px){
+	.fullscreen .modal-body ul {
+		padding: 30px 0 0 0;
+		overflow: auto;
+	}
+	.fullscreen .modal-body li {
+		padding: 10px 0 10px 0 ;
+	}
+}
+
+
+
+
+
+/*****************************************************/
+/*                    Index                          */
+/*****************************************************/
+
+/***  Medium(+) Screens UP  ***/
+@media (min-width: 850px) {
+  #counter.sticky {
+    position:fixed;
+    top:50;
+    width:100%;
+    z-index:9;
+  }
+  #recentDestinations.sticky2 {
+    margin-top:260;
+    z-index:99;
+    background:#fff;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  
+}
+
+
+
+/* Static Headline
+---------------------------------------------- */
+#headline {
+  background: url('../resources/img/IMG_8048.JPG') no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  min-height:50vh;
+  margin-bottom:0px;
+}
+#headline h1 {
+	text-align:center;
+	font-family: 'rock salt';
+	margin-top:150px;
+	color:white;
+}
+
+/* Video Headline
+---------------------------------------------- */
+/*video { */
+/*  position: fixed;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  min-width: 100%;*/
+/*  min-height: 100%;*/
+/*  width: auto;*/
+/*  height: auto;*/
+/*  z-index: -100;*/
+/*  transform: translateX(-50%) translateY(-50%);*/
+/*  background: url('../img/IMG_8862.JPG') no-repeat;*/
+/*  background-size: cover;*/
+/*  transition: 1s opacity;*/
+/*}*/
+/*#videoText {*/
+/*  height:500px;*/
+/*}*/
+/*#videoText h1 {*/
+/*  font-family: 'rock salt';*/
+/*  color: white;*/
+/*  text-align: center;*/
+/*  padding-top:200px;*/
+/*}*/
+
+
+/*@media screen and (max-device-width: 800px) {*/
+/*  html { background: url('../img/IMG_8862.JPG') #000 no-repeat center center; }*/
+/*  #bgvid { display: none; }*/
+/*}*/
+
+
+/* About Intro
+---------------------------------------------- */
+
+#aboutIntro h2 {
+  padding:25px;
+  color:white;
+  text-align: center;
+  line-height:1.5;
+}
+
+/* Counter
+---------------------------------------------- */
+#counter {
+	background-color:#3A6F9E;
+	text-align:center;
+	color:white;
+}
+#counter .row {
+  margin-right:0px;
+  margin-left:0px;
+}
+#counter .fontShift {
+  font-family: 'rock salt';
+}
+.counter-text {
+  display:inline-block;
+}
+
+#counter .col-md-4 hr {
+  display:inline-block;
+  width:35%;
+  border-top:2px dashed white;
+}
+#counter .fa-plane {
+  color:white;
+  line-height:90px;
+  font-size:3em;
+}
+#counter .fa-plane:hover {
+	color:#15a892;
+}
+
+/* Recent Destinations
+---------------------------------------------- */
+#recentDestinations {
+  background-color:white;
+  padding-top:25px;
+  padding-bottom:50px;
+}
+#recentDestinations h1 {
+  text-align:center;
+  color:#333;
+  text-transform:uppercase;
+}
+#recentDestinations p {
+  text-align:center;
+  color:#333;
+}
+#recentDestinations .thumbnail {
+  border:none;
+  margin-top:25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+#recentDestinations .thumbnail:hover {
+  opacity: 0.9;
+}
+#recentDestinations .thumbnailText {
+  top:50%;
+  left:0;
+  width:100%;
+  color:#f0f0f0;
+  font-family: 'rock salt';
+  position: absolute;
+  text-align: center;
+}
+#viewAll {
+  text-align:center;
+  font-size: 1.25em;
+}
+.regBtn {
+  text-align:center;
+  border:1px solid #333;
+  border-radius:0px;
+  background-color: white;
+  color:#333333;
+  transition:.15s;
+}
+.regBtn:hover {
+  background-color: #3A6F9E;
+  border:1px solid #3A6F9E;
+  color:white;
+}
+
+/* Favorite Destinations
+---------------------------------------------- */
+#favoriteDestinations {
+  background-color: #3A6F9E;
+  padding-top:25px;
+  padding-bottom:50px;
+}
+
+#favoriteDestinations h1 {
+  text-align:center;
+  color:white;
+  text-transform:uppercase;
+}
+
+#favoriteDestinations p {
+  text-align:center;
+  color:#333;
+}
+.thumbnail {
+  border:none;
+  margin-top:25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.thumbnail:hover {
+  opacity: 0.9;
+}
+.thumbnailText {
+  top:50%;
+  left:0;
+  width:100%;
+  color:#fff !important;
+  font-family: 'rock salt';
+  position: absolute;
+  text-align: center;
+}
+#viewAll {
+  text-align:center;
+  font-size: 1.25em;
+}
+.whiteBtn {
+  text-align:center;
+  border:1px solid white;
+  border-radius:0px;
+  background-color: transparent;
+  color:white;
+  transition:.15s;
+}
+.whiteBtn:hover {
+  background-color: white;
+  border:1px solid white;
+  color:#3A6F9E;
+}
+
+
+
+/*****************************************************/
+/*             DESTINATIONS                          */
+/*****************************************************/
+
+/***  Medium Screens UP  ***/
+@media (min-width: 480px) {
+  #chartdiv {
+    position:fixed;
+  }
+  #swap:before {
+    content:'North America';
+  }
+  .nav-pills li {
+    width:23%;
+  }
+}
+
+/***  iPhone Screen  ***/
+@media (max-width: 480px){
+  #swap:before {
+    content:'N. America';
+  }
+  .nav-pills li {
+   letter-spacing:1px; 
+  }
+}
+
+
+/* Map 
+-----------------------------------------*/
+#travelBanner {
+  min-height:60vh;
+  background:transparent;
+}
+#chartdiv {
+  width: 100%;
+  height: 450px;
+  margin-top:25px;
+  margin-bottom:25px;
+  z-index:-1;
+}
+
+
+/* Continent Tabs 
+-----------------------------------------*/
+#continentTabs {
+  
+}
+.nav-pills {
+	text-align: center;
+	border-radius:0px;
+}
+.nav-pills li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  zoom:1; /* hasLayout ie7 trigger */
+  border:3px solid #3A6F9E;
+  color:#3A6F9E;
+  background-color:rgba(255,255,255,.85);
+  text-align:center;
+  border-radius: 0px;
+  font-weight:500;
+}
+.nav-pills li a {
+	border-radius:0;
+	transition:.25s;
+}
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+  color: white;
+  background-color: #3A6F9E;
+  border-top-left-radius: 0;
+}
+.nav-pills li a:hover {
+  color: white;
+  background-color: #3A6F9E;
+  border-radius: 0;
+}
+
+
+/* Destinations Tabs
+---------------------------------------------- */
+
+#destinations-tab {
+  background-color: #3A6F9E;
+  padding-top:25px;
+  padding-bottom:50px;
+}
+
+#destinations-tab h1 {
+  text-align:center;
+  color:white;
+  text-transform:uppercase;
+}
+
+#destinations-tab p {
+  text-align:center;
+  color:#333;
+}
+
+
+/*****************************************************/
+/*                   Footer                          */
+/*****************************************************/
+
+/* Settings for page wrap
+---------------------------------------------- */
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -125px;
+  /* Pad bottom by footer height */
+  padding: 0 0 125px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  min-height: 125px;
+  background-color:#3A3A3A;
+  padding:25px;
+  text-align: center;
+  color:white;
+}
+
+#footer a {
+  padding:10px;
+}
+
+#footer h4 {
+  padding-bottom:15px;
+}
+
+
+
+/*---------------------------------------------- */
+/* Contact Modal
+---------------------------------------------- */
+.modal-backdrop {
+  background-color:#3A6F9E;
+}
+.modal-backdrop.in {
+    opacity:.85;
+}
+/*Vertically Center Modal*/
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+#contactModal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+/*no border radius on bootstrap modal*/
+.modal-content  {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+div.modal-content{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  background-color:#fff;
+}
+/*Modal Content Styling*/
+#contactModal .modal-header h3 {
+	text-align: center;
+}
+#contactModal .modal-body h3 {
+  color:#2cb5b1;
+  text-align:center;
+}
+
+.modal-close {
+	/*border:1px solid #3A6F9E;*/
+	background-color: #3A6F9E;
+	border-radius:0px;
+	color:white;
+	padding:5px;
+	padding-top:8px;
+}
+.modal-close:hover {
+	opacity:.85;
+	color:white;
+}
+
+
+/* ------------------------------------------- */
+/*  JS Map Styles
+---------------------------------------------- */
+
+.map-marker {
+    /* adjusting for the marker dimensions
+    so that it is centered on coordinates */
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.map-marker.map-clickable {
+    cursor: pointer;
+}
+.pulse {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #3A6F9E;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #3A6F9E;
+    z-index: 10;
+    position: absolute;
+  }
+.map-marker .dot {
+    border: 10px solid #3A6F9E;
+    background: transparent;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 2.5s ease-out;
+    -moz-animation: pulse 2.5s ease-out;
+    animation: pulse 2.5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+    opacity: 0;
+  }
+  @-moz-keyframes pulse {
+   0% {
+      -moz-transform: scale(0);
+      opacity: 0.0;
+   }
+   25% {
+      -moz-transform: scale(0);
+      opacity: 0.1;
+   }
+   50% {
+      -moz-transform: scale(0.1);
+      opacity: 0.3;
+   }
+   75% {
+      -moz-transform: scale(0.5);
+      opacity: 0.5;
+   }
+   100% {
+      -moz-transform: scale(1);
+      opacity: 0.0;
+   }
+  }
+  @-webkit-keyframes "pulse" {
+   0% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;
+   }
+   25% {
+      -webkit-transform: scale(0);
+      opacity: 0.1;
+   }
+   50% {
+      -webkit-transform: scale(0.1);
+      opacity: 0.3;
+   }
+   75% {
+      -webkit-transform: scale(0.5);
+      opacity: 0.5;
+   }
+   100% {
+      -webkit-transform: scale(1);
+      opacity: 0.0;
+   }
+  }
