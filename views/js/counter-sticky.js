@@ -3,7 +3,7 @@
 var counterTop = $('#counter').offset().top;
 $(window).scroll(function() {
     var currentScroll = $(window).scrollTop();
-    if ((currentScroll - 120) >= counterTop) {
+    if ((currentScroll + 50) >= counterTop) {
         $('#counter').addClass('sticky');
         $('#recentDestinations').addClass('sticky2');
     } else {

@@ -41,8 +41,38 @@ body {
     align-items: center;      /* vertically center flex items */
 }
 
+/*Thumbnals*/
 .thumbnail {
   border-radius:0px !important;
+}
+
+/*buttons*/
+.regBtn {
+  text-align:center;
+  border:1px solid #333;
+  border-radius:0px;
+  background-color: white;
+  color:#333333;
+  transition:.15s;
+}
+.regBtn:hover {
+  background-color: #3A6F9E;
+  border:1px solid #3A6F9E;
+  color:white;
+}
+
+.whiteBtn {
+  text-align:center;
+  border:1px solid white;
+  border-radius:0px;
+  background-color: transparent;
+  color:white;
+  transition:.15s;
+}
+.whiteBtn:hover {
+  background-color: white;
+  border:1px solid white;
+  color:#3A6F9E;
 }
 
 
@@ -99,6 +129,22 @@ body {
 /*                     Navbar                        */
 /*****************************************************/
 
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  .navbar.sticky-nav {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  .navbar {
+    position:fixed;
+  }
+}
 
 .navbar-right {
   margin-right:-35px !important;
@@ -153,6 +199,7 @@ body {
 }
 .navbar-default .navbar-nav li a {
   color: #333;
+  font-weight:500;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
@@ -163,10 +210,9 @@ body {
 
 /* MENU BUTTON
 -------------------------------------------------- */
-
 #burger {
   border:1px solid transparent;
-  margin-right:25px; 
+  margin-right:10px; 
 }
 #burger:hover {
   border:1px solid #3A6F9E;
@@ -243,13 +289,12 @@ body {
 
 
 
-
 /*****************************************************/
 /*                    Index                          */
 /*****************************************************/
 
-/***  Medium(+) Screens UP  ***/
-@media (min-width: 850px) {
+/***  Large Screens UP  ***/
+@media (min-width: 961px) {
   #counter.sticky {
     position:fixed;
     top:50;
@@ -257,17 +302,30 @@ body {
     z-index:9;
   }
   #recentDestinations.sticky2 {
-    margin-top:260;
+    margin-top:90;
     z-index:99;
     background:#fff;
   }
 }
 
-/***  Medium Screens DOWN  ***/
+/***  Large Screens DOWN  ***/
+@media (max-width: 961px) {
+  #counter {
+    padding-bottom:50px;
+  }
+}
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  #headline.margin-scroll {
+    margin-top:50px;
+  }
+}
+
+/***  Medium Screens Down  ***/
 @media (max-width: 767px) {
   
 }
-
 
 
 /* Static Headline
@@ -324,8 +382,9 @@ body {
 /* About Intro
 ---------------------------------------------- */
 
-#aboutIntro h2 {
+#aboutIntro {
   padding:25px;
+  background-color:#3A6F9E;
   color:white;
   text-align: center;
   line-height:1.5;
@@ -367,7 +426,7 @@ body {
 ---------------------------------------------- */
 #recentDestinations {
   background-color:white;
-  padding-top:25px;
+  padding-top:35px;
   padding-bottom:50px;
 }
 #recentDestinations h1 {
@@ -401,25 +460,13 @@ body {
   text-align:center;
   font-size: 1.25em;
 }
-.regBtn {
-  text-align:center;
-  border:1px solid #333;
-  border-radius:0px;
-  background-color: white;
-  color:#333333;
-  transition:.15s;
-}
-.regBtn:hover {
-  background-color: #3A6F9E;
-  border:1px solid #3A6F9E;
-  color:white;
-}
+
 
 /* Favorite Destinations
 ---------------------------------------------- */
 #favoriteDestinations {
   background-color: #3A6F9E;
-  padding-top:25px;
+  padding-top:35px;
   padding-bottom:50px;
 }
 
@@ -455,19 +502,6 @@ body {
   text-align:center;
   font-size: 1.25em;
 }
-.whiteBtn {
-  text-align:center;
-  border:1px solid white;
-  border-radius:0px;
-  background-color: transparent;
-  color:white;
-  transition:.15s;
-}
-.whiteBtn:hover {
-  background-color: white;
-  border:1px solid white;
-  color:#3A6F9E;
-}
 
 
 
@@ -476,25 +510,39 @@ body {
 /*****************************************************/
 
 /***  Medium Screens UP  ***/
-@media (min-width: 480px) {
-  #chartdiv {
+@media (min-width: 768px) {
+  #chartdiv { 
+    height:500px;
+    margin-bottom:-25px;
+  }
+  #chartdiv.margin-scroll {
+    margin-top:-20px;
     position:fixed;
   }
   #swap:before {
     content:'North America';
+  }
+  #continentTabs.margin-scroll {
+    margin-top:25px;
   }
   .nav-pills li {
     width:23%;
   }
 }
 
-/***  iPhone Screen  ***/
-@media (max-width: 480px){
+/***  Medium ScreenS Down  ***/
+@media (max-width: 768px){
+  #chartdiv { 
+    min-height:325px;
+  }
   #swap:before {
     content:'N. America';
   }
   .nav-pills li {
    letter-spacing:1px; 
+  }
+  #continentTabs {
+    margin-top:-50px;
   }
 }
 
@@ -507,18 +555,12 @@ body {
 }
 #chartdiv {
   width: 100%;
-  height: 450px;
-  margin-top:25px;
-  margin-bottom:25px;
   z-index:-1;
 }
 
 
 /* Continent Tabs 
 -----------------------------------------*/
-#continentTabs {
-  
-}
 .nav-pills {
 	text-align: center;
 	border-radius:0px;
